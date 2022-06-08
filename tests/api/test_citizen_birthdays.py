@@ -9,10 +9,7 @@ from analyzer.utils.testing import (
 
 
 def make_response(values: Mapping[str, Any] = None):
-    """
-    Генерирует словарь, в котором ключи месяцы, а значения по умолчанию - [].
-    Позволяет записать ожидаемый ответ в краткой форме.
-    """
+
     return {
         str(month): values.get(str(month), []) if values else []
         for month in range(1, 13)

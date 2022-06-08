@@ -1,10 +1,4 @@
-"""initial
 
-Revision ID: d5f704ed4610
-Revises:
-Create Date: 2020-01-20 12:44:11.155956
-
-"""
 from alembic import op
 from sqlalchemy import (
     Column, Date, Enum, ForeignKeyConstraint, Integer, PrimaryKeyConstraint,

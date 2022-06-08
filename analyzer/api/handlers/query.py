@@ -1,5 +1,4 @@
 from sqlalchemy import and_, func, select
-
 from analyzer.db.schema import citizens_table, relations_table
 
 

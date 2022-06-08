@@ -24,7 +24,6 @@ def load_requirements(fname: str) -> list:
             )
     return requirements
 
-
 setup(
     name=module_name,
     version=module.__version__,

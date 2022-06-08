@@ -8,7 +8,7 @@ RUN python3.8 -m venv /usr/share/python3/app
 RUN /usr/share/python3/app/bin/pip install -U pip
 
 # Устанавливаем зависимости отдельно чтобы закешировать, при последующей сборке
-# Docker пропустит этот шаг если requirements.txt не изменится
+
 COPY requirements.txt /mnt/
 RUN /usr/share/python3/app/bin/pip install -Ur /mnt/requirements.txt
 

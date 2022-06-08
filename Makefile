@@ -16,7 +16,6 @@ all:
 
 clean:
 	rm -fr *.egg-info dist
-
 devenv: clean
 	rm -rf env
 	# создаем новое окружение

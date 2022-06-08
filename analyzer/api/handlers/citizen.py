@@ -6,7 +6,6 @@ from aiohttp_apispec import docs, request_schema, response_schema
 from asyncpg import ForeignKeyViolationError
 from marshmallow import ValidationError
 from sqlalchemy import and_, or_
-
 from analyzer.api.schema import PatchCitizenResponseSchema, PatchCitizenSchema
 from analyzer.db.schema import citizens_table, relations_table
 

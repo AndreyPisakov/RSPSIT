@@ -2,7 +2,6 @@ from aiohttp.web_exceptions import HTTPNotFound
 from aiohttp.web_urldispatcher import View
 from asyncpgsa import PG
 from sqlalchemy import exists, select
-
 from analyzer.db.schema import imports_table
 
 

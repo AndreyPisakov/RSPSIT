@@ -9,7 +9,6 @@ from analyzer.api.handlers import (
 )
 from analyzer.utils.testing import generate_citizen, generate_citizens, url_for
 
-
 class AnalyzerTaskSet(TaskSet):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

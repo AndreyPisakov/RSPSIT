@@ -7,7 +7,6 @@ from sqlalchemy import func, select, text
 from analyzer.api.schema import TownAgeStatResponseSchema
 from analyzer.db.schema import citizens_table
 from analyzer.utils.pg import rounded
-
 from .base import BaseImportView
 
 

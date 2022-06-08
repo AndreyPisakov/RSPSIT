@@ -19,9 +19,7 @@ async def unexpected_error(_: Request):
 
 
 async def http_error_without_json_payload(_: Request):
-    """
-    Обработчик с веб-исключением.
-    """
+
     raise HTTPBadRequest(text='some error happened')
 
 

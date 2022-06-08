@@ -4,7 +4,6 @@ from aiohttp_apispec import docs, response_schema
 from analyzer.api.schema import CitizensResponseSchema
 from analyzer.db.schema import citizens_table as citizens_t
 from analyzer.utils.pg import SelectQuery
-
 from .base import BaseImportView
 from .query import CITIZENS_QUERY
 

@@ -4,7 +4,6 @@ from itertools import groupby
 from aiohttp.web_response import Response
 from aiohttp_apispec import docs, response_schema
 from sqlalchemy import Integer, and_, cast, func, select
-
 from analyzer.api.schema import CitizenPresentsResponseSchema
 from analyzer.db.schema import (
     citizens_table as citizens_t, relations_table as relations_t,

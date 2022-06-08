@@ -10,7 +10,6 @@ from asyncpg import Record
 
 from analyzer.api.schema import BIRTH_DATE_FORMAT
 
-
 @singledispatch
 def convert(value):
     """

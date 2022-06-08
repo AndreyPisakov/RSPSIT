@@ -8,9 +8,7 @@ from analyzer.api.app import create_app
 
 @pytest.fixture
 async def migrated_postgres(alembic_config, postgres):
-    """
-    Возвращает URL к БД с примененными миграциями.
-    """
+
     upgrade(alembic_config, 'head')
     return postgres
 

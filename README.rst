@@ -24,17 +24,13 @@
 
 .. code-block:: shell
 
-    docker run -it \
-        -e ANALYZER_PG_URL=postgresql://user:hackme@localhost/analyzer \
-        alvassin/backendschool2019 analyzer-db upgrade head
+    docker run -it -e ANALYZER_PG_URL=postgresql://user:hackme@localhost/analyzer alvassin/backendschool2019 analyzer-db upgrade head
 
 Как запустить REST API сервис локально на порту 8081:
 
 .. code-block:: shell
 
-    docker run -it -p 8081:8081 \
-        -e ANALYZER_PG_URL=postgresql://user:hackme@localhost/analyzer \
-        alvassin/backendschool2019
+    docker run -it -p 8081:8081 -e ANALYZER_PG_URL=postgresql://user:hackme@localhost/analyzer alvassin/backendschool2019
 
 Все доступные опции запуска любой команды можно получить с помощью
 аргумента :shell:`--help`:
@@ -115,8 +111,3 @@ deploy/hosts.ini (с установленной Ubuntu) и выполните к
 
 .. _locust: https://locust.io
 
-Ссылки
-======
-* `Трансляция с ответами`_ на наиболее частые вопросы по тестовым заданиям и Школе.
-
-.. _Трансляция с ответами: https://www.youtube.com/watch?v=Bf0liGAahao

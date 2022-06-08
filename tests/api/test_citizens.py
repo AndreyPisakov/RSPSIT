@@ -11,7 +11,6 @@ from analyzer.utils.testing import (
 
 
 datasets = [
-    # Житель с несколькими родственниками.
     # Обработчик должен корректно возвращать жителя со всеми родственниками.
     [
         generate_citizen(citizen_id=1, relatives=[2, 3]),

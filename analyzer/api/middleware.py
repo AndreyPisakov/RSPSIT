@@ -14,7 +14,6 @@ from analyzer.api.payloads import JsonPayload
 
 log = logging.getLogger(__name__)
 
-
 def format_http_error(http_error_cls, message: Optional[str] = None,
                       fields: Optional[Mapping] = None) -> HTTPException:
     """

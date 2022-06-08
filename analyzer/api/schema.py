@@ -15,7 +15,6 @@ from marshmallow.validate import Length, OneOf, Range
 
 from analyzer.db.schema import Gender
 
-
 BIRTH_DATE_FORMAT = '%d.%m.%Y'
 
 

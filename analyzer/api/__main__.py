@@ -28,7 +28,6 @@ parser = ArgumentParser(
 )
 parser.add_argument('--user', required=False, type=pwd.getpwnam,
                     help='Change process UID')
-
 group = parser.add_argument_group('API Options')
 group.add_argument('--api-address', default='0.0.0.0',
                    help='IPv4/IPv6 address API server would listen on')

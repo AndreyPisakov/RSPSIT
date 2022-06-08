@@ -8,7 +8,6 @@ from sqlalchemy import (
 
 # SQLAlchemy рекомендует использовать единый формат для генерации названий для
 # индексов и внешних ключей.
-# https://docs.sqlalchemy.org/en/13/core/constraints.html#configuring-constraint-naming-conventions
 convention = {
     'all_column_names': lambda constraint, table: '_'.join([
         column.name for column in constraint.columns.values()

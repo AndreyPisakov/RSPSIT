@@ -4,7 +4,6 @@ from .citizens import CitizensView
 from .imports import ImportsView
 from .town_stat import TownAgeStatView
 
-
 HANDLERS = (
     CitizenBirthdaysView, CitizensView, CitizenView, ImportsView,
     TownAgeStatView,

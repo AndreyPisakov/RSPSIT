@@ -13,7 +13,6 @@ from analyzer.api.middleware import error_middleware, handle_validation_error
 from analyzer.api.payloads import AsyncGenJSONListPayload, JsonPayload
 from analyzer.utils.pg import setup_pg
 
-
 # По умолчанию размер запроса к aiohttp ограничен 1 мегабайтом:
 # https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.Application
 # Размер запроса со 10 000 жителей и 2000 связей (с учетом максимальной длины

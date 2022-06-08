@@ -14,7 +14,6 @@ from analyzer.utils.testing import (
 LONGEST_STR = 'ё' * 256
 CASES = (
     # Житель без родственников.
-    # Обработчик должен корректно создавать выгрузку с одним жителем.
     (
         [
             generate_citizen(relatives=[])

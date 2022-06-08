@@ -27,13 +27,7 @@ CURRENT_DATE = datetime(2020, 2, 17, tzinfo=pytz.utc)
 
 
 def age2date(years: int, days: int = 0, base_date=CURRENT_DATE) -> str:
-    """
-    Возвращает дату рождения для жителя, возраст которого составляет years лет
-    и days дней. Дата рассчитывается исходя из базовой CURRENT_DATE.
 
-    Позволяет представлять дату рождения жителя в виде возраста человека в днях
-    и годах, что гораздо нагляднее в тестах.
-    """
     birth_date = copy(base_date).replace(year=base_date.year - years)
     birth_date -= timedelta(days=days)
     return birth_date.strftime(BIRTH_DATE_FORMAT)

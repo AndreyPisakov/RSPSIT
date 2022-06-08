@@ -1,6 +1,5 @@
 from http import HTTPStatus
 from typing import Generator
-
 from aiohttp.web_response import Response
 from aiohttp_apispec import docs, request_schema, response_schema
 from aiomisc import chunk_list
