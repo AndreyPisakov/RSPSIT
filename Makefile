@@ -2,7 +2,6 @@ PROJECT_NAME ?= backendschool2019
 VERSION = $(shell python3 setup.py --version | tr '+' '-')
 PROJECT_NAMESPACE ?= alvassin
 REGISTRY_IMAGE ?= $(PROJECT_NAMESPACE)/$(PROJECT_NAME)
-
 all:
 	@echo "make devenv		- Create & setup development virtual environment"
 	@echo "make lint		- Check code with pylama"
